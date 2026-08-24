@@ -1,8 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY = "7b1ef4dd964ff9dadaddc2de8923b5c6"
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 BG_COLOR = "#0B1026"
